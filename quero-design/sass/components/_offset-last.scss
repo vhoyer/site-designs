@@ -1,0 +1,10 @@
+.offset {
+    $base-margin: 32px;
+
+    margin-bottom: $base-margin + 32px;
+
+    &__this-child {
+        margin-top: -$base-margin + 10px;
+        transform: translateY($base-margin);
+    }
+}

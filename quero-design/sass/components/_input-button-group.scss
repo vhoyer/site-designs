@@ -1,0 +1,36 @@
+.input-button-group {
+    $border-radius: 5px;
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 100%;
+
+    &__field {
+        flex-grow: 1;
+
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        border: 1px solid $dark-border-color;
+        border-right: none;
+
+        padding: 1em;
+        height: 100%;
+        line-height: 1;
+
+        margin-right: 0;
+    }
+    &__button {
+        margin-left: 0;
+        padding: 0 1em;
+        height: 100%;
+
+        font-weight: 600;
+
+        color: $accent-color;
+        background-color: #fafafa;
+
+        border: solid 1px $dark-border-color;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+    }
+}

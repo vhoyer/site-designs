@@ -1,0 +1,17 @@
+$title-color: #333;
+$subtitle-color: #575757;
+$text-color: #727272;
+$fade-text-color: #bababa;
+
+$light-background: #fafafa;
+
+$border-color: darken($light-background, $amount: 12%);
+$dark-border-color: darken($light-background, $amount: 25%);
+
+$accent-color: #d1a246;
+$footer-light: #17acc4;
+$footer-medium: #05869b;
+$footer-dark: #006f8a;
+
+$block-padding: 16px;
+$max-content-width: 994px;

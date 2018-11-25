@@ -1,0 +1,30 @@
+.display-on {
+    display: none;
+
+    &--xs-only {
+        display: block;
+        @include for-tabled-portrait-up {
+            display: none;
+        }
+    }
+    &--sm-up {
+        @include for-tabled-portrait-up {
+            display: block;
+        }
+    }
+    &--md-up {
+        @include for-tabled-landscape-up {
+            display: block;
+        }
+    }
+    &--lg-up {
+        @include for-desktop-up {
+            display: block;
+        }
+    }
+    &--xl-up {
+        @include for-big-desktop-up {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.link {
+    &:focus,
+    &:hover,
+    &:active,
+    &:visited, 
+    & {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+
+    &--orange {
+        &,
+        &:active,
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+        &:visited {
+            color: #835600;
+        }
+    }
+
+    &--underlined {
+        text-decoration: underline;
+
+        &:active,
+        &:hover,
+        &:focus {
+            color: $footer-dark;
+        }
+    }
+
+}

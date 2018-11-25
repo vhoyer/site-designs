@@ -1,0 +1,40 @@
+.dropdown-navigation {
+
+    &__button {
+        @include for-tablet-landscape-up {
+            display: none;
+        }
+    }
+    &__nav {
+        display: none;
+        @include for-tablet-landscape-up {
+            display: block;
+        }
+    }
+
+    &__button__toggle {
+        visibility: hidden;
+        position: absolute;
+    }
+    &__button__toggle:checked ~ &__nav {
+        z-index: 3;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        background-image: linear-gradient(90deg, #18aac1, #07859b);
+
+        > .nav-list {
+            display: flex;
+            flex-flow: column nowrap;
+
+            * {
+                text-align: left;
+            }
+        }
+        @include for-tablet-landscape-up {
+
+        }
+    }
+}

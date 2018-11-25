@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Quero Bolsa</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:200,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="site-header__upper">
+                <div class="upper-site-header">
+                    <div class="upper-site-header__item-container">
+                        <a href="#" class="upper-site-header__item">
+                            <img src="assets/boia.png" width="24" height="24" alt="" role="presentation">
+                            <span>Ajuda</span>
+                        </a>
+                    </div>
+                    <div class="upper-site-header__item-container upper-site-header__item-container--l-tablet-up">
+                        <a href="#" class="upper-site-header__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36" style="fill: #de9f1e;"><path fill-rule="evenodd" d="M18 34.364C8.962 34.364 1.636 27.038 1.636 18S8.962 1.636 18 1.636 34.364 8.962 34.364 18 27.038 34.364 18 34.364M18 0C8.06 0 0 8.06 0 18s8.06 18 18 18 18-8.06 18-18S27.94 0 18 0m1.79 8.993c-.635 0-1.18.206-1.634.617-.455.412-.682.907-.682 1.486 0 .58.227 1.072.682 1.48.454.407 1 .61 1.634.61.635 0 1.178-.203 1.63-.61.45-.408.675-.9.675-1.48s-.226-1.074-.676-1.486c-.452-.41-.995-.617-1.63-.617m.614 16.386c-.5 0-.854-.08-1.057-.24-.204-.162-.305-.462-.305-.904 0-.176.03-.434.094-.777.063-.343.134-.648.212-.915l.967-3.325c.095-.304.16-.64.194-1.005.035-.366.053-.62.053-.766 0-.702-.254-1.27-.76-1.71-.506-.438-1.226-.656-2.16-.656-.518 0-1.067.09-1.648.268-.58.18-1.19.395-1.825.646l-.258 1.028c.188-.068.414-.14.677-.217.262-.077.52-.115.77-.115.513 0 .858.084 1.04.25.18.17.27.466.27.893 0 .236-.03.497-.088.782-.06.285-.132.59-.218.908l-.972 3.337c-.085.35-.148.665-.188.943-.038.277-.058.55-.058.817 0 .685.26 1.25.782 1.697.52.445 1.252.667 2.192.667.612 0 1.15-.078 1.61-.235.464-.155 1.083-.383 1.86-.68l.258-1.028c-.133.06-.35.13-.646.212-.297.08-.563.12-.798.12"></path></svg>
+                            <span class="text text--margin-x">Como funciona</span>
+                        </a>
+                        <a href="#" class="upper-site-header__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36" style="fill: #de9f1e;"><path fill-rule="evenodd" d="M27.402 34.364c-1.026 0-2.025-.227-2.968-.674-.088-.04-.18-.074-.272-.098-9.3-4.745-17.004-12.45-21.75-21.75-.025-.096-.06-.19-.102-.282-.448-.945-.674-1.944-.674-2.97 0-3.967 3.474-6.954 5.726-6.954.294 0 .49.15.578.24.02.02.057.064.11.15.03.046.062.09.095.135L13.53 9.09c.042.054.087.103.136.152.09.09.24.284.24.578 0 .145-.04.282-.12.408l-1.823 1.81-.024.024c-.662.622-1.038 1.483-1.038 2.386 0 .845.328 1.65.898 2.255.02.033.042.065.064.096 2.01 2.78 4.48 5.24 7.344 7.318l.067.046c.605.58 1.415.914 2.265.914.854 0 1.678-.34 2.29-.943.03-.026.06-.054.09-.084l1.833-1.847c.128-.08.265-.122.41-.122.293 0 .488.15.577.24.048.048.1.093.152.135l6.926 5.387c.044.035.09.067.138.097.087.054.126.09.146.108.09.09.24.284.24.578 0 .056.002.11.008.166-.128 2.25-3.07 5.574-6.948 5.574zm8.575-5.74c0-.678-.275-1.292-.72-1.736-.13-.13-.277-.24-.435-.34l-6.925-5.387c-.445-.444-1.057-.72-1.735-.72-.555 0-1.06.194-1.47.505l-1.933 1.948-.006-.004c-.3.333-.73.548-1.214.548-.554 0-1.04-.276-1.337-.697-.01.017-.024.032-.035.05-2.673-1.94-5.04-4.276-6.978-6.953l.054-.04c-.426-.298-.706-.79-.706-1.35 0-.502.228-.945.58-1.247l-.002-.004 1.923-1.908c.31-.41.5-.914.5-1.47 0-.677-.274-1.29-.718-1.735L9.436 1.155C9.338 1 9.226.85 9.096.72 8.653.274 8.04 0 7.363 0 4.09 0 0 3.846 0 8.59c0 1.315.304 2.556.83 3.67l-.026.027c4.922 9.804 13.1 17.986 22.903 22.91l.027-.028c1.113.526 2.353.83 3.668.83 4.743 0 8.588-4.09 8.588-7.364v-.013h-.013zM19.64 9.817c3.615 0 6.544 2.93 6.544 6.546 0 .452.366.818.818.818.452 0 .818-.366.818-.818 0-4.518-3.662-8.182-8.18-8.182-.452 0-.817.366-.817.818 0 .452.365.818.818.818zm0-8.182c8.132 0 14.724 6.595 14.724 14.728 0 .452.366.818.818.818.452 0 .818-.366.818-.818C36 7.326 28.676 0 19.64 0c-.452 0-.817.367-.817.818 0 .453.365.818.818.818z"></path></svg>
+                            <span class="text text--margin-x">0800 666 1010</span>
+                        </a>
+                    </div>
+                    <img class="upper-site-header__logo" src="assets/logo-querobolsa.svg" alt="Logo da Quero Bolsa">
+                    <a href="#" class="upper-site-header__item upper-site-header__item--right">
+                        <img src="assets/perfil.png" width="24" height="24" alt="" role="presentation">
+                        <span class="text text--mobile">Entrar</span>
+                        <span class="text text--l-tablet-up text--margin-x">Entre ou crie sua conta</span>
+                    </a>
+                </div>
+            </div>
+            <div class="site-header__lower container container--full">
+                <strong class="site-header__nav-title" id="minha-conta">Minha conta</strong>
+                <div class="site-header__nav dropdown-navigation" aria-labelledby="minha-conta">
+                    <label class="dropdown-navigation__button" for="nav-ck">
+                        Menu <span class="dropdown-arrow" role="presentation" aria-hidden="true"></span>
+                    </label>
+                    <input class="dropdown-navigation__button__toggle" type="checkbox" id="nav-ck" />
+                    <nav class="dropdown-navigation__nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><a href="#" class="link">Pré-matrículas</a></li>
+                            <li class="nav-list__item"><a href="#" class="link">Meus cursos</a></li>
+                            <li class="nav-list__item"><a href="#" class="link">Atualizar meus dados</a></li>
+                            <li class="nav-list__item"><a href="#" class="link">Contas e preferências</a></li>
+                            <li class="nav-list__item nav-list__item--active"><a href="#" class="link">Quero bolsa indica</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <header class="main-header container">
+                <h1 class="main-header__title">Quero Bolsa Indica</h1>
+                <p>Acumule potos e troque por mensalidades pagas</p>
+            </header>
+            <section class="offset">
+                <div class="container passo-content">
+                    <div class="passo-content__text">
+                        <header class="section-header">
+                            <h2 class="section-header__title">Passo a passo Quero Bolsa Indica</h2>
+                            <p class="section-header__subtitle">Indique amigos, e a gente paga sua mensalidade!</p>
+                        </header>
+                        <p>
+                            Aqui está a sua chance de ter mensalidades da sua faculdade
+                            pagas pelo programa de indicação do Quero Bolsa.<br>
+                            Indique amigos, acumule pontos e troque pelo pagamento das
+                            suas mensalidades!
+                        </p>
+                        <ol class="big-numbers-list">
+                            <li class="big-numbers-list__item"><div><strong>Cadastre-se</strong> no Quero Bolsa Indica.</div></li>
+                            <li class="big-numbers-list__item"><div><strong>Envie seu link personalizado para os seus amigos</strong> que queiram cursar o Ensino Superior.</div></li>
+                            <li class="big-numbers-list__item"><div><strong>Acompanhe a sua pontuação</strong> no Extrato resumido e <strong>troque</strong> pelo pagamento de mensalidades.</div></li>
+                        </ol>
+                    </div>
+                    <form class="card offset__this-child passo-content__form">
+                        <header>
+                            <h3 class="card__title">Participe, acumule pontos e ganhe!</h3>
+                            <p>Preencha os campos abaixo:</p>
+                        </header>
+                        <div class="form-participe">
+                            <div class="form-participe__situacao labeled-input labeled-input--custom-arrow">
+                                <label class="labeled-input__label" for="situacao">Situação</label>
+                                <select class="labeled-input__input" name="situacao" id="situacao">
+                                    <option value="">Vou me matricular esse semestre</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+
+                            <div class="form-participe__instituicao labeled-input labeled-input--custom-arrow">
+                                <label class="labeled-input__label" for="instituicao">Instituição de ensino</label>
+                                <select class="labeled-input__input" name="instituicao" id="instituicao">
+                                    <option value="">Escolha uma universidade</option>
+                                    <option value="2">...</option>
+                                </select>
+                            </div>
+
+                            <div class="form-participe__curso labeled-input labeled-input--custom-arrow">
+                                <label class="labeled-input__label" for="curso">Curso</label>
+                                <select class="labeled-input__input" name="curso" id="curso">
+                                    <option value="">Qual seu curso?</option>
+                                    <option value="2">curso 2</option>
+                                </select>
+                            </div>
+
+                            <div class="form-participe__mensalidade labeled-input">
+                                <label class="labeled-input__label" for="mensalidade">Mensalidade</label>
+                                <input class="labeled-input__input" type="text" name="mensalidade" id="mensalidade">
+                            </div>
+                        </div>
+
+                        <button class="button">Quero participar</button>
+                        <a class="link link--orange text text--center" href="#">Leia o regulamento</a>
+                    </form>
+                </div>
+            </section>
+            <section class="container indica-content">
+                <h2 class="section-header__title indica-content__head">Indique o Quero Bolsa para seus amigos</h2>
+                <section class="indique-section indica-content__indique">
+                    <h3 class="indique-section__heading section-header__subtitle">Envie para contatos do e-mail e compartilhe nas redes sociais</h3>
+                    <section class="indique-section__email circle-social">
+                        <h4 class="circle-social__heading">Contatos do e-mail</h4>
+                        <a class="circle-social__link"><img src="assets/gmail.png" alt="gmail"></a>
+                        <a class="circle-social__link"><img src="assets/outlook.png" alt="outlook"></a>
+                    </section>
+                    <section class="indique-section__network circle-social">
+                        <h4 class="circle-social__heading">Redes sociais</h4>
+                        <a class="circle-social__link"><img src="assets/facebook.png" alt="facebook"></a>
+                        <a class="circle-social__link"><img src="assets/twitter.png" alt="twitter"></a>
+                        <a class="circle-social__link"><img src="assets/whatsapp.png" alt="whatsapp"></a>
+                    </section>
+                </section>
+                <hr class="indica-content__hr">
+                <section class="indica-content__envie">
+                    <h3 class="section-header__subtitle">Envie o link por e-mail ou copie e compartilhe</h2>
+                    <form class="form-group">
+                        <label for="emails">
+                            <span>Digite o e-mail das pessoas que você quer enviar o convite</span>
+                            <em class="sr-only" aria-hidden="false">Utilize vírgula para separar os e-mails</em>
+                        </label>
+                        <div class="input-button-group">
+                            <input class="input-button-group__field" id="emails" type="text" placeholder="Entre com os e-mails" />
+                            <button class="input-button-group__button" type="submit">Enviar</button>
+                        </div>
+                        <em class="text text--small" aria-hidden="true">Utilize vírgula para separar os e-mails</em>
+                    </form>
+                    <div class="form-group">
+                        <label for="link">Clique para copiar o link, depois cole onde quiser</label>
+                        <div class="input-button-group">
+                            <input class="input-button-group__field" id="link" type="text" value="https://que.bo/i/0af0b49" />
+                            <button class="input-button-group__button" type="submit">Copiar</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <section class="site-footer__contato" aria-label="Mais informações">
+                <ul class="footer-h-list container">
+                    <li class="footer-h-list__item footer-h-list__item--phone">
+                        <div class="h-list-item h-list-item--full-width">
+                            <svg class="h-list-item__icon h-list-item__icon--full-width" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path fill-rule="evenodd" d="M27.402 34.364c-1.026 0-2.025-.227-2.968-.674-.088-.04-.18-.074-.272-.098-9.3-4.745-17.004-12.45-21.75-21.75-.025-.096-.06-.19-.102-.282-.448-.945-.674-1.944-.674-2.97 0-3.967 3.474-6.954 5.726-6.954.294 0 .49.15.578.24.02.02.057.064.11.15.03.046.062.09.095.135L13.53 9.09c.042.054.087.103.136.152.09.09.24.284.24.578 0 .145-.04.282-.12.408l-1.823 1.81-.024.024c-.662.622-1.038 1.483-1.038 2.386 0 .845.328 1.65.898 2.255.02.033.042.065.064.096 2.01 2.78 4.48 5.24 7.344 7.318l.067.046c.605.58 1.415.914 2.265.914.854 0 1.678-.34 2.29-.943.03-.026.06-.054.09-.084l1.833-1.847c.128-.08.265-.122.41-.122.293 0 .488.15.577.24.048.048.1.093.152.135l6.926 5.387c.044.035.09.067.138.097.087.054.126.09.146.108.09.09.24.284.24.578 0 .056.002.11.008.166-.128 2.25-3.07 5.574-6.948 5.574zm8.575-5.74c0-.678-.275-1.292-.72-1.736-.13-.13-.277-.24-.435-.34l-6.925-5.387c-.445-.444-1.057-.72-1.735-.72-.555 0-1.06.194-1.47.505l-1.933 1.948-.006-.004c-.3.333-.73.548-1.214.548-.554 0-1.04-.276-1.337-.697-.01.017-.024.032-.035.05-2.673-1.94-5.04-4.276-6.978-6.953l.054-.04c-.426-.298-.706-.79-.706-1.35 0-.502.228-.945.58-1.247l-.002-.004 1.923-1.908c.31-.41.5-.914.5-1.47 0-.677-.274-1.29-.718-1.735L9.436 1.155C9.338 1 9.226.85 9.096.72 8.653.274 8.04 0 7.363 0 4.09 0 0 3.846 0 8.59c0 1.315.304 2.556.83 3.67l-.026.027c4.922 9.804 13.1 17.986 22.903 22.91l.027-.028c1.113.526 2.353.83 3.668.83 4.743 0 8.588-4.09 8.588-7.364v-.013h-.013zM19.64 9.817c3.615 0 6.544 2.93 6.544 6.546 0 .452.366.818.818.818.452 0 .818-.366.818-.818 0-4.518-3.662-8.182-8.18-8.182-.452 0-.817.366-.817.818 0 .452.365.818.818.818zm0-8.182c8.132 0 14.724 6.595 14.724 14.728 0 .452.366.818.818.818.452 0 .818-.366.818-.818C36 7.326 28.676 0 19.64 0c-.452 0-.817.367-.817.818 0 .453.365.818.818.818z"></path></svg>
+                            <address class="h-list-item__big-text h-list-item__big-text--full-width">0800 666 1010</address>
+                            <img class="h-list-item__state h-list-item__state--full-width" src="assets/off.png" alt="não disponível">
+                            <small class="h-list-item__small-text h-list-item__small-text--full-width">
+                                <span class="text text--l-tablet-up">Seg - Sex das 9h às 23h</span>
+                                <span class="text text--mobile">Seg-Sex 9 as 21h</span>
+                            </small>
+                        </div>
+                    </li>
+                    <li class="footer-h-list__item">
+                        <div class="h-list-item">
+                            <svg class="h-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="0 0 41 36"><path fill-rule="evenodd" d="M15.212 31.5c-1.066 0-2.168-.12-3.276-.362-.128-.03-.26-.042-.388-.042-.222 0-.445.04-.654.12l-4.75 1.81.754-2.62c.2-.694-.037-1.44-.603-1.893-2.457-1.97-3.81-4.584-3.81-7.363 0-5.707 5.71-10.35 12.727-10.35 7.018 0 12.727 4.643 12.727 10.35S22.23 31.5 15.21 31.5m0-22.5C7.18 9 .667 14.44.667 21.15c0 3.447 1.725 6.55 4.485 8.76L3.394 36l8.154-3.104c1.172.255 2.395.404 3.664.404 8.033 0 14.546-5.44 14.546-12.15S23.245 9 15.212 9m25.455 3.15C40.667 5.44 34.155 0 26.12 0c-6 0-11.148 3.036-13.37 7.37.717-.093 1.447-.15 2.19-.16C17.1 3.99 21.302 1.8 26.12 1.8c7.02 0 12.728 4.643 12.728 10.35 0 2.78-1.352 5.393-3.81 7.362-.566.454-.805 1.2-.604 1.894l.756 2.62-3.76-1.432c-.072.61-.21 1.202-.372 1.786l6.88 2.62-1.757-6.09c2.762-2.21 4.487-5.314 4.487-8.76"></path></svg>
+                            <a class="link h-list-item__big-text" href="#">
+                                <span class="text text--mobile">Chat</span>
+                                <span class="text text--l-tablet-up link link--underlined">Chat ao Vivo</span>
+                            </a>
+                            <img class="h-list-item__state" src="assets/off.png" alt="não disponível">
+                            <small class="h-list-item__small-text">Fale com um atendente</small>
+                        </div>
+                    </li>
+                    <li class="footer-h-list__item">
+                        <div class="h-list-item">
+                            <svg class="h-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="37" height="27" viewBox="0 0 37 27"><path fill-rule="evenodd" d="M34.697 22.837c0 .098-.013.19-.03.284L24.566 13.05 34.668 2.98c.016.092.03.185.03.282v19.575zM33.06 24.47H3.606c-.192 0-.374-.04-.545-.1L13.26 14.202l2.81 2.8c.625.625 1.445.937 2.265.937.82 0 1.64-.312 2.266-.936l2.808-2.8 10.2 10.165c-.174.06-.355.1-.548.1zM1.97 22.836V3.262c0-.097.012-.19.028-.283L12.1 13.05 2 23.12c-.016-.092-.03-.185-.03-.283zM3.605 1.63H33.06c.193 0 .374.04.546.102l-14.164 14.12c-.297.294-.69.457-1.11.457-.418 0-.81-.164-1.108-.46L3.06 1.733c.172-.062.354-.1.546-.1zM33.06 0H3.606C1.798 0 .333 1.46.333 3.262v19.575c0 1.802 1.465 3.263 3.273 3.263H33.06c1.808 0 3.273-1.46 3.273-3.263V3.262c0-1.8-1.465-3.262-3.273-3.262z"></path></svg>
+                            <a class="link h-list-item__big-text" href="mailto:contato@email.com">
+                                <span class="text text--l-tablet-up link link--underlined">Mande um E-mail</span>
+                                <span class="text text--mobile">Email</span>
+                            </a>
+                            <img class="h-list-item__state" src="assets/on.png" alt="disponível">
+                            <small class="h-list-item__small-text">Respondemos rapidinho</small>
+                        </div>
+                    </li>
+                    <li class="footer-h-list__item">
+                        <div class="h-list-item">
+                            <svg class="h-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path fill-rule="evenodd" d="M18 34.364C8.962 34.364 1.636 27.038 1.636 18S8.962 1.636 18 1.636 34.364 8.962 34.364 18 27.038 34.364 18 34.364M18 0C8.06 0 0 8.06 0 18s8.06 18 18 18 18-8.06 18-18S27.94 0 18 0m1.79 8.993c-.635 0-1.18.206-1.634.617-.455.412-.682.907-.682 1.486 0 .58.227 1.072.682 1.48.454.407 1 .61 1.634.61.635 0 1.178-.203 1.63-.61.45-.408.675-.9.675-1.48s-.226-1.074-.676-1.486c-.452-.41-.995-.617-1.63-.617m.614 16.386c-.5 0-.854-.08-1.057-.24-.204-.162-.305-.462-.305-.904 0-.176.03-.434.094-.777.063-.343.134-.648.212-.915l.967-3.325c.095-.304.16-.64.194-1.005.035-.366.053-.62.053-.766 0-.702-.254-1.27-.76-1.71-.506-.438-1.226-.656-2.16-.656-.518 0-1.067.09-1.648.268-.58.18-1.19.395-1.825.646l-.258 1.028c.188-.068.414-.14.677-.217.262-.077.52-.115.77-.115.513 0 .858.084 1.04.25.18.17.27.466.27.893 0 .236-.03.497-.088.782-.06.285-.132.59-.218.908l-.972 3.337c-.085.35-.148.665-.188.943-.038.277-.058.55-.058.817 0 .685.26 1.25.782 1.697.52.445 1.252.667 2.192.667.612 0 1.15-.078 1.61-.235.464-.155 1.083-.383 1.86-.68l.258-1.028c-.133.06-.35.13-.646.212-.297.08-.563.12-.798.12"></path></svg>
+                            <a class="link h-list-item__big-text" href="#">
+                                <span class="text text--l-tablet-up link link--underlined">Central de ajuda</span>
+                                <span class="text text--mobile">Ajuda</span>
+                            </a>
+                            <img class="h-list-item__state" src="assets/on.png" alt="disponível">
+                            <small class="h-list-item__small-text">Encontre todas as respostas</small>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="site-footer__link-list" aria-label="Lista de links">
+                <div class="container">
+                    <div class="link-list">
+                        <a class="link link-list__item" href="#">Central de Ajuda</a>
+                        <a class="link link-list__item" href="#">Vs Educa Mais Brasil</a>
+                        <a class="link link-list__item" href="#">Vs Mais Estudo</a>
+                        <a class="link link-list__item" href="#">Mapa de Faculdades</a>
+                        <a class="link link-list__item" href="#">Mapa de Cursos</a>
+                        <a class="link link-list__item" href="#">Revista QB</a>
+                        <a class="link link-list__item" href="#">Guia de Programas do Governo</a>
+                        <a class="link link-list__item" href="#">Trabalhe conosco</a>
+                        <a class="link link-list__item" href="#">Imprensa</a>
+                    </div>
+                    <div class="link-list link-list--l-tablet-up">
+                        <section>
+                            <h3 class="link-list__heading">Encontre sua Bolsa</h3>
+                            <ul class="link-list__list">
+                                <li class="link-list__list-item"><a href="#" class="link">Busque por Faculdade</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Busque por Curso</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Mapa de Faculdades</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Mapa de Cursos</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 class="link-list__heading">Central de Ajuda</h3>
+                            <ul class="link-list__list">
+                                <li class="link-list__list-item"><a href="#" class="link">Passo a Passo</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Perguntas Frequestes</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Vs Educa Mais Brasil</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Vs Mais Estudo/Neora</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 class="link-list__heading">Programas do Governo</h3>
+                            <ul class="link-list__list">
+                                <li class="link-list__list-item"><a href="#" class="link">Notas de Corte</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Tudo sobre Prouni</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Tudo sobre Sisu</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Tudo sobre Fies</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 class="link-list__heading">Revista QB</h3>
+                            <ul class="link-list__list">
+                                <li class="link-list__list-item"><a href="#" class="link">Vestivular e Enem</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Dicas e curiosidades</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Carreiras</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Universidades</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 class="link-list__heading">Institucional</h3>
+                            <ul class="link-list__list">
+                                <li class="link-list__list-item"><a href="#" class="link">Trabalhe Conosco</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Para Faculdades</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Seja um Parceiro</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Imprensa</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 class="link-list__heading">Dicas Quero Bolsa</h3>
+                            <ul class="link-list__list">
+                                <li class="link-list__list-item"><a href="#" class="link">Bolsas Ensino Básico</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Serviços Parceiros</a></li>
+                                <li class="link-list__list-item"><a href="#" class="link">Quero Bolsa 100%</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <section class="site-footer__badges" aria-label="Bandeiras">
+                <img src="assets/siteseguro-small.png" alt="site seguro">
+                <img src="assets/visa.png" alt="visa">
+                <img src="assets/mastercard.png" alt="mastercard">
+                <img src="assets/amex.png" alt="amex">
+                <img src="assets/elo.png" alt="elo">
+                <img src="assets/boleto.png" alt="boleto">
+            </section>
+            <section class="site-footer__social" aria-label="Conecte-se às nossas redes sociais">
+                <img src="assets/yt.png" alt="YouTube">
+                <img src="assets/ig.png" alt="Instagram">
+                <img src="assets/fb.png" alt="Facebook">
+            </section>
+            <section class="site-footer__midia">
+                <div class="container footer-midia">
+                    <section>
+                        <h2 class="footer-midia__heading">Somos destaque na imprensa</h2>
+                        <div class="footer-midia__item">
+                            <img src="assets/globo.png" alt="globo">
+                            <img src="assets/folha.png" alt="folha">
+                            <img src="assets/veja.png" alt="veja">
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="footer-midia__heading">Conecte-se às nossas redes sociais</h2>
+                        <div class="footer-midia__item">
+                            <img src="assets/yt.png" alt="YouTube">
+                            <img src="assets/ig.png" alt="Instagram">
+                            <img src="assets/tw.png" alt="Twitter">
+                            <img src="assets/fb.png" alt="Facebook">
+                            <p>500k likes</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="footer-midia__heading">Atendimento de excelência</h2>
+                        <div class="footer-midia__item">
+                            <img src="assets/premioepoca.png" alt="Premio Época Reclame Aqui">
+                            <p>
+                                Campeã 2015<br>
+                                Educação presencial
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="footer-midia__heading">Política Bolsa Garantida</h2>
+                        <div class="footer-midia__item">
+                            <img src="assets/garantia.png" alt="">
+                            <p>Você na faculdade ou seu dinheiro de volta</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="site-footer__footer">
+                <div class="site-footer__container container container--full">
+                    <small>
+                        <span class="text text--l-tablet-up">RedeAlumni &copy; 2011 - 2016</span>
+                        <span class="text text--mobile">RedeAlumni Serviços de Internet Ltda &copy; 2011 - 2016</span>
+                        <br>
+                        CNPJ: 10.542.212/0001-54
+                    </small>
+                    <div class="footer-desktop-badges">
+                        <img src="assets/siteseguro.png" alt="site seguro">
+                        <img src="assets/visa.png" alt="visa">
+                        <img src="assets/mastercard.png" alt="mastercard">
+                        <img src="assets/amex.png" alt="amex">
+                        <img src="assets/dinner.png" alt="dinner">
+                        <img src="assets/elo.png" alt="elo">
+                        <img src="assets/hypercard.png" alt="hypercard">
+                        <img src="assets/boleto.png" alt="boleto">
+                    </div>
+                    <small>Feito com <img class="img-text" src="assets/love.png" alt="amor"> pela Quero Educação</small>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

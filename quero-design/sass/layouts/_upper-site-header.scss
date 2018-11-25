@@ -1,0 +1,86 @@
+.upper-site-header {
+    $item-border: solid 1px $border-color;
+
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .75em;
+
+    max-width: $max-content-width;
+    height: 100%;
+    margin: 0 auto;
+
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 42px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 64px;
+        height: 100%;
+        border-right: $item-border;
+
+        line-height: 1.2rem;
+        text-decoration: none;
+        color: $text-color;
+
+        &--right {
+            border: none;
+            border-left: $item-border;
+        }
+
+        @include for-tablet-landscape-up {
+            width: auto;
+            flex-flow: row nowrap;
+            border: none;
+
+            &--right {
+                flex-flow: row-reverse nowrap;
+            }
+
+            & + & {
+                border-left: $item-border;
+                padding-left: .5rem;
+            }
+        }
+    }
+    
+    &__item:active,
+    &__item:focus,
+    &__item:hover {
+        text-decoration: underline;
+    }
+
+    &__item-container {
+        height: 100%;
+
+        &--l-tablet-up {
+            display: none;
+        }
+
+        @include for-tablet-landscape-up {
+            display: none;
+
+            &--l-tablet-up {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+    }
+
+    @include for-tablet-landscape-up {
+        font-size: .85em;
+    }
+}

@@ -1,0 +1,32 @@
+.text {
+    &--center {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+
+    &--small {
+        font-size: .8em;
+    }
+
+    &--margin-x::before,
+    &--margin-x::after {
+        content: ' ';
+        display: inline-block;
+        width: .5em;
+    }
+
+
+    &--l-tablet-up {
+        display: none;
+        @include for-tablet-landscape-up {
+            display: inline;
+        }
+    }
+    &--mobile {
+        display: inline;
+        @include for-tablet-landscape-up {
+            display: none;
+        }
+    }
+}

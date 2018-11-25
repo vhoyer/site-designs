@@ -1,0 +1,30 @@
+.circle-social {
+    display: inline-block;
+    margin-right: 17px;
+
+    &__heading {
+        display: block;
+        margin-top: 0;
+        margin-bottom: .3rem;
+
+        font-size: 14px;
+        font-weight: 400;
+        color: $text-color;
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 48px;
+        height: 48px;
+
+        border-radius: 50%;
+        border: 1px solid $dark-border-color;
+    }
+
+    &__link + &__link {
+        margin-left: 13px;
+    }
+}

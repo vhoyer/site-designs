@@ -1,0 +1,16 @@
+.main {
+    display: block;
+
+    padding-left: $block-padding;
+    padding-right: $block-padding;
+
+    &>*:nth-child(even){
+        background-color: $light-background;
+        border-bottom: 1px solid $border-color;
+
+        margin-left: -$block-padding;
+        margin-right: -$block-padding;
+        padding-left: $block-padding;
+        padding-right: $block-padding;
+    }
+}

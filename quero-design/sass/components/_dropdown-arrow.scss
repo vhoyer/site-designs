@@ -1,0 +1,19 @@
+.dropdown-arrow {
+    display: inline-block;
+
+    width: .4rem;
+    height: .4rem;
+
+    transform: rotate(45deg) translateY(-50%);
+
+    $border: solid 1px whitesmoke;
+    border-bottom: $border;
+    border-right: $border;
+
+    &--opened {
+        border-bottom: none;
+        border-right: none;
+        border-left: $border;
+        border-top: $border;
+    }
+}

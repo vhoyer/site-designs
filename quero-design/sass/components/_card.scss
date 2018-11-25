@@ -1,0 +1,15 @@
+.card {
+    border-radius: 5px;
+    border: solid 1px #bbb;
+    box-shadow: 0 2px 2px 1px $border-color;
+
+    background-color: white;
+
+    padding: 33px 31px 15px;
+
+    &__title {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+}

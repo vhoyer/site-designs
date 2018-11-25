@@ -1,0 +1,7 @@
+.footer-desktop-badges {
+    display: none;
+
+    @include for-tablet-landscape-up {
+        display: block;
+    }
+}

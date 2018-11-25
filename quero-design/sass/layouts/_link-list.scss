@@ -1,0 +1,39 @@
+.link-list {
+    text-align: center;
+    font-size: 14px;
+
+    @include for-tablet-landscape-up {
+        display: none;
+    }
+
+
+    &__item + &__item::before {
+        content: '|';
+        display: inline-block;
+        margin: 0 .8em;
+    }
+
+    &__heading {
+        color: white;
+        font-weight: 600;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__list-item {
+        margin: 7px 0;
+    }
+
+    &--l-tablet-up {
+        display: none;
+        @include for-tablet-landscape-up {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.footer-h-list {
+    list-style: none;
+
+    padding: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    @include for-tablet-landscape-up {
+        justify-content: space-between;
+    }
+
+    &__item {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-grow: 1;
+        min-width: 71px;
+        height: 71px;
+
+        font-size: 13px;
+
+        @include for-tablet-landscape-up {
+            height: 98px;
+            flex-grow: 0;
+        }
+
+        &--phone {
+            width: auto;
+        }
+    }
+    > * + * {
+        border-left: 1px solid $footer-medium;
+
+        @include for-tablet-landscape-up {
+            border-left: none;
+        }
+    }
+}

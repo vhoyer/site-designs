@@ -1,0 +1,28 @@
+body {
+    font-family: 'Catamaran', Helvetica, sans-serif;
+    margin: 0;
+    color: $text-color;
+
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $title-color;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $border-color;
+}

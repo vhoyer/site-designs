@@ -1,0 +1,72 @@
+.big-numbers-list {
+    $circle-radius: 25px;
+    $spacer: 18px;
+    $vline-height: 16px;
+
+    list-style-type: none;
+    counter-reset: big-numbers-list;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: $circle-radius;
+    padding-left: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        margin-top: 10px + $vline-height;
+        margin-bottom: 10px;
+        height: $circle-radius * 2 + 5px;
+
+        //magic numbers
+        font-size: 0.93em;
+        line-height: 1.30em;
+
+        position: relative;
+        margin-left: $circle-radius + $spacer;
+    }
+    &__item:first-child {
+        margin-top: 0;
+    }
+
+    &__item::before {
+        $border-width: 2px;
+
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -($circle-radius * 2 + $border-width + $spacer);
+
+        content: counter(big-numbers-list);
+        counter-increment: big-numbers-list;
+
+        text-align: center;
+        line-height: $circle-radius * 2;
+        font-weight: bold;
+        font-size: 20px;
+
+        width: $circle-radius * 2;
+        height: $circle-radius * 2;
+
+        background-color: $light-background;
+
+        border-radius: 50%;
+        border: $border-width solid $text-color;
+    }
+
+    &__item + &__item::after {
+        content: ' ';
+        position: absolute;
+        left: -($circle-radius + $spacer);
+        top: -($vline-height + 10px);
+
+        border-left: solid 1px $text-color;
+
+        height: $vline-height;
+    }
+}
