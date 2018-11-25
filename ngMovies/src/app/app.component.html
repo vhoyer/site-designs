@@ -1,0 +1,20 @@
+<div class="navbar">
+  <div class="content">
+    <a routerLink=''>
+      <h1>ng-movies</h1>
+    </a>
+    <nav>
+      <a routerLink='list' routerLinkActive='active'>List</a>
+    </nav>
+  </div>
+  <form (submit)="onSearch()">
+    <input type="text" placeholder="Search" [(ngModel)]="query" name="query">
+    <button type="submit">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+</div>
+
+<div class="clearfix"></div>
+
+<router-outlet></router-outlet>

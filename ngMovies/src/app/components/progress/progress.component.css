@@ -1,0 +1,13 @@
+.progress, .bar {
+    min-height: 2px;
+    border-radius: 4px;
+}
+
+.progress {
+    background-color: #ddd;
+    width: 100%;
+}
+
+.bar {
+    background-color: #09A129;
+}

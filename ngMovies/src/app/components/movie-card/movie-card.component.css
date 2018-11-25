@@ -1,0 +1,56 @@
+.movie-card {
+    display: flex;
+    flex-flow: row nowrap;
+
+    overflow: hidden;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    margin: 15px 0;
+
+    max-height: 231px;
+}
+
+.body {
+    flex-grow: 1;
+
+    position: relative;
+
+    padding: 0 15px;
+}
+
+.title .small {
+    font-size: .7em;
+
+    color: #666;
+}
+
+.noposter{
+    width: 154px; 
+    height: 230px;
+    background-color: #dddddd;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+}
+
+.know-more {
+    display: block;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    background-color: #fff;
+
+    padding: .6em;
+    padding-left: 15px;
+
+    border-top: #ccc solid 1px;
+}

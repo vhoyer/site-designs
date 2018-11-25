@@ -1,0 +1,54 @@
+<div class="movie-card">
+  <a routerLink="/detail/{{movie.id}}">
+    <div *ngIf="movie.poster_path; then poster else noposter"></div>
+  </a>
+  <div class="body">
+    <h3 class="title">
+      <a routerLink="/detail/{{movie.id}}">{{movie.title}}</a>
+      <br>
+      <span class="small">{{movie.release_date}}</span>
+    </h3>
+    <app-progress [value]="movie.vote_average * 10"></app-progress>
+
+    <p>{{movie.overview}}</p>
+
+    <a class="know-more" routerLink="/detail/{{movie.id}}">
+      More Info
+    </a>
+  </div>
+</div>
+
+<ng-template #poster>
+  <img class='poster' width="154" height="230" src="{{data.getPosterPath(movie.poster_path,1)}}" alt="{{movie.title}}: {{movie.tagline}}">
+</ng-template>
+<ng-template #noposter>
+  <div class="noposter"><i class="fa fa-image fa-4x"></i></div>
+</ng-template>
+
+<!--
+  adult: boolean;
+  backdrop_path: string;
+  belongs_to_collection: { id: number; name: string; poster_path: string; backdrop_path: string; };
+  budget: number;
+  genres: { id: number; name: string; }[];
+  homepage: string;
+  id: number;
+  imdb_id: string;
+  original_language: string;
+  original_title: string;
+  overview: string;
+  popularity: number;
+  poster_path: string;
+  production_companies: { id: number; logo_path: string; name: string; origin_country: string; }[];
+  production_countries: { iso_3166_1: string; name: string; }[];
+  release_date: Date;
+  revenue: number;
+  runtime: number;
+  spoken_languages: { iso_639_1: string; name: string; }[];
+  status: string;
+  tagline: string;
+  title: string;
+  video: boolean;
+  vote_average: number;
+  vote_count: number;
+-->

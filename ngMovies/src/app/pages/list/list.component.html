@@ -1,0 +1,7 @@
+<div class="holder" *ngIf="movies; else preloader">
+  <app-movie-card *ngFor="let movie of movies" class="mcard" [movie]="movie"></app-movie-card>
+</div>
+
+<ng-template #preloader>
+  <app-preloader></app-preloader>
+</ng-template>
